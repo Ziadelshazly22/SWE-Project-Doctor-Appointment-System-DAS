@@ -1,0 +1,21 @@
+{% extends 'base_generic.html' %}
+
+{% block content %}
+<div class="container">
+    <h2>Write Prescription</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="patient_id">Select Patient:</label>
+        <select name="patient_id" id="patient_id">
+            {% for patient in patients %}
+                <option value="{{ patient.id }}">{{ patient.name }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="prescription">Prescription:</label>
+        <textarea name="prescription" id="prescription" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+{% endblock %}

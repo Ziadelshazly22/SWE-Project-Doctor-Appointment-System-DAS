@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Appointments - Receptionist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    {% extends 'base_generic.html' %}
+
+    {% block content %}
+    <div class="container">
+        <h2>Manage Appointments</h2>
+        <ul>
+            {% for appointment in appointments %}
+                <li>
+                    {{ appointment.patient.name }} - {{ appointment.doctor.name }} - {{ appointment.date }} - {{ appointment.time }}
+                    <button>Reschedule</button>
+                    <button>Cancel</button>
+                </li>
+            {% endfor %}
+        </ul>
+        <ul>
+            {% for appointment in appointments %}
+                <li>
+                    {{ appointment.patient.name }} on {{ appointment.date }}
+                    <a href="#">Cancel</a>
+                </li>
+            {% endfor %}
+        </ul>
+        <footer><a href="receptionist-dashboard.html">Back to Dashboard</a></footer>
+    </div>
+    {% endblock %}
+</body>
+</html>
