@@ -93,9 +93,9 @@ This project follows **Agile methodology** with:
 doctorappointment/
 ├── .gitignore
 ├── docs/
-|   ├──
-|   ├──
-├── README.md
+|   ├──Doctor Appointment System (DAS) Proposal x SWE .docx
+|   ├── README.md
+|   ├──Scrum Meetings.docx
 ├── requirements.txt
 ├── manage.py
 ├── doctorappointment/
