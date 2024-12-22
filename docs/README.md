@@ -1,5 +1,3 @@
-# SWE-Project-Doctor-Appointment-System-DAS
-
 # **Doctor Appointment System (DAS)**
 
 **"Doctors Within Reach, Your Path to Wellness Starts Here."**
